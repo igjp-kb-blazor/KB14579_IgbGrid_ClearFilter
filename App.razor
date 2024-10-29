@@ -1,0 +1,43 @@
+﻿<div style="max-width: 1100px; margin: auto; padding: 24px; display: flex; flex-direction: column; gap: 24px;">
+    <div>
+        <IgbGrid Data="@sample._people"
+                 Height="500px"
+                 Width="100%"
+                 PrimaryKey="@nameof(Sample.Person.Id)"
+                 AutoGenerate="false"
+                 AllowFiltering="true" 
+                 FilterMode="FilterMode.ExcelStyleFilter"
+                 @ref="grid">
+            <IgbColumn Field="@nameof(Sample.Person.Name)" Header="氏名"></IgbColumn>
+            <IgbColumn Field="@nameof(Sample.Person.Category)" Header="カテゴリ"></IgbColumn>"
+            <IgbColumn Field="@nameof(Sample.Person.Age)" Header="年齢" DataType="GridColumnDataType.Number"></IgbColumn>
+            <IgbColumn Field="@nameof(Sample.Person.JobTitle)" Header="職種"></IgbColumn>
+            <IgbColumn Field="@nameof(Sample.Person.Location)" Header="所在地"></IgbColumn>"
+            <IgbColumn Field="@nameof(Sample.Person.Department)" Header="部署"></IgbColumn>""
+        </IgbGrid>
+    </div>
+    <div>
+        <IgbButton @onclick="ClearNameFilter">"氏名列"のフィルターをクリア</IgbButton>
+        <IgbButton @onclick="ClearAllFilter">全てのフィルターをクリア</IgbButton>
+    </div>
+</div>
+@code {
+    private IgbGrid? grid;
+
+    private async Task ClearNameFilter()
+    {
+        if (grid != null)
+        {
+            await grid.ClearFilterAsync("Name");
+        }
+    }
+    private async Task ClearAllFilter()
+    {
+        if (grid != null)
+        {
+            await grid.ClearFilterAsync("");
+        }
+    }
+
+    private Sample sample = new();
+}

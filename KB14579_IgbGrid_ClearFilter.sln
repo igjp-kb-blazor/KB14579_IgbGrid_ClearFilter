@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KB14579_IgbGrid_ClearFilter", "KB14579_IgbGrid_ClearFilter.csproj", "{54F079FF-B86E-4AF6-B5E5-258A6DEACBCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54F079FF-B86E-4AF6-B5E5-258A6DEACBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F079FF-B86E-4AF6-B5E5-258A6DEACBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F079FF-B86E-4AF6-B5E5-258A6DEACBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F079FF-B86E-4AF6-B5E5-258A6DEACBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B04B774-A3E3-493D-8236-D19AABB41B9F}
+	EndGlobalSection
+EndGlobal
